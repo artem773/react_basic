@@ -2,16 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import { Header } from './App';
 
-const text = 'hello artem';
-const elem = (
-  <div>
-    <h2 className='text'>Grettings: {text}</h2>
-    <input type="text"/>
-    <label htmlFor=""></label>
-    <button tabIndex="0">click</button>
-  </div>
-);  
+// const text = 'hello artem';
+// const elem = (
+//   <div>
+//     <h2 className='text'>Grettings: {text}</h2>
+//     <input type="text"/>
+//     <label htmlFor=""></label>
+//     <button tabIndex="0">click</button>
+//   </div>
+// );  
 
 //==============================================================
 //const elem = <h2>hello</h2>; // то же самое что і внізу
@@ -28,5 +29,6 @@ const elem = (
 
 const root = ReactDOM.createRoot(document.getElementById('root')); // во что ми помещаем рендер со страніци 
 root.render( //что ми рендерим на страніце 
-  elem
+  <App/>,
+  <Header/>
 );
