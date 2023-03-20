@@ -47,12 +47,23 @@ const Btn = () => {
   return <button>{logged ? 'Enter' : text}</button>
 }
 
+const WhoAmI = ({name, surname, link}) => {
+  return(
+    <div>
+      <h1>My name is {name()}, surname - {surname}</h1>
+      <a href="{link}">my page</a>
+    </div>
+  )
+}
+
 function App() {
   return (
     <div className="App">
       <Header />
       <Field />
       <Btn />
+      <WhoAmI name = {() => {return "Artem"}} surname = "Liskovshchenko" link = "https://www.facebook.com/artem.liskovschenko"/>
+      <WhoAmI name = {() => {return "Yuna"}} surname = "Levchenko" link = "https://www.facebook.com/yuna.levchenko"/>
     </div>
   );
 }
