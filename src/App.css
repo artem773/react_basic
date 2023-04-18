@@ -2,8 +2,11 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #242424;
 }
-.App{
-  display: flex;
+
+.App {
+  display: block;
   justify-content: center;
+  color: white;
 }
